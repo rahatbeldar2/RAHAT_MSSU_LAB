@@ -1,0 +1,14 @@
+<h1>Parent Component</h1>
+<hr>
+
+<!-- 
+  We place the child component here.
+  (updateProfile) listens for the event emitted by the child.
+  $event carries the data ('Rahat Beldar') to the updateUser function.
+-->
+<app-user-profile (updateProfile)="updateUser($event)">
+</app-user-profile>
+
+<hr>
+
+<h3>Updated User Name: {{ userName }}</h3>
